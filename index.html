@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Бидний анхны шинэ жил </title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/Vandebo - Mangar Tom Zurh (Official Audio).mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Энд дараарай</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Хоёулаа үерхээд</h2>
+			<div id="timer">
+				<b id="d"></b> Days 
+				<b id="h"></b> Hours
+				<b id="m"></b> Minutes
+				<b id="s"></b> Seconds
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg" , "pic5.jpg , pic6.jpg , pic7.jpg "];
+			var imageIndex = 0;
+			var txtArray = ["Энэ жилийн хамгийн том бэлэг чи байлаа", "Хамгийн хөөрхөн , хамгийн үзэсгэлэнтэй ", "Энэ бүхнийг хамт давж гараад , хамт ирээдүйд маш олон шинэ жилийг угтацгаая",
+			 "Ирээдүйгээ чамаас өөр хүнээр төсөөлж чадахгүй , чи л миний ус агаар юм шүү. Ирээдүйд гэрлэцгээе миний ирээдүйн эхнэрээ " , "Улам цаашдаа их хичээцгээе" , "Цаашид олон жил хамтдаа , он удаан жил 100 жил хамт амьдарцгаая"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
